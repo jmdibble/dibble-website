@@ -239,8 +239,8 @@ p {
   padding-bottom: 30px;
 }
 
-/* #skills-blurb {
-  margin: 20px 250px 10px 250px;
+ #skills-blurb {
+  margin: 20px 50px 10px 50px;
   transition-duration: 0.2s;
 }
 
@@ -260,7 +260,7 @@ p {
   #skills-blurb {
     margin: 0 0 50px 0;
   }
-} */
+} 
 
 .my-work2 {
     text-align: center;
