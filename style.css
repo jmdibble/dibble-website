@@ -226,13 +226,14 @@ p {
 }
 
 .my-work {
+    background-color: #fbfbfb;
     text-align: center;
     padding: 2rem 1rem 3rem 1rem;
     vertical-align: middle;
 }
 
 #title {
-  padding-bottom: 15px;
+  padding-bottom: 30px;
 }
 
 #skills-title {
@@ -242,6 +243,7 @@ p {
  #skills-blurb {
   margin: 20px 50px 10px 50px;
   transition-duration: 0.2s;
+  letter-spacing: 1px;
 }
 
 @media (max-width: 1300px) {
@@ -301,8 +303,8 @@ p {
   border-radius: 20px;
   width: 100%;
   height: auto;
-  max-width: 400px;
-  max-height: 250px;
+  max-width: 340px;
+  max-height: 200px;
   margin: auto;
 }
 
@@ -310,8 +312,8 @@ p {
   display: block;
   border-radius: 20px;
   width: 100%;
-  max-width: 400px;
-  max-height: 250px;
+  max-width: 340px;
+  max-height: 200px;
   height: auto;
   margin: auto;
 }
@@ -357,7 +359,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 50px;
+  padding-top: 10px;
 }
 
 .col {
@@ -393,7 +395,7 @@ p {
     padding: 2rem 1rem 2rem 1rem;
     text-align: center;
     background-image: linear-gradient(rgba(61, 30, 86, 0.4) 100%, rgba(0, 0, 0, 0.5) 100%), url("images/nasa-min.jpg");
-    margin-top: 1rem;
+/*    margin-top: 1rem;*/
     /* Position and center the image to scale nicely on all screens */
     background-position: fixed;
     background-repeat: no-repeat;
@@ -450,7 +452,7 @@ p {
     margin: auto;
     padding: 2rem 4rem 3rem 4rem;
     vertical-align: middle;
-    max-width: 1100px;
+    max-width: 1300px;
 }
 
 @media (max-width: 600px) {
@@ -516,9 +518,17 @@ input[type=submit]:hover {
   height: 150px;
 }
 
+.contact-me {
+    /*background-color: #FCFCFC;*/
+    text-align: center;
+    padding: 2rem 1rem 3rem 1rem;
+    vertical-align: middle;
+}
+
+
 /* Footer*/
 .footer {
-  margin-top: 20px;
+  /*margin-top: 20px;*/
   padding-top: 10px;
   padding-bottom: 20px;
   font-size: 0.8rem;
