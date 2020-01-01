@@ -1,11 +1,12 @@
-body, html {
-    height: 100%;
+body,
+html {
+  height: 100%;
 }
 
 body {
-    font-family: "Karla", sans-serif;
-    padding: 0;
-    margin: 0;
+  font-family: 'Tajawal', sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 h1 {
@@ -18,6 +19,10 @@ h2 {
   text-align-last: center;
   font-size: 1.5rem;
   font-weight: 400;
+}
+
+#obsession {
+  color: #ffffff;
 }
 
 h3 {
@@ -45,7 +50,7 @@ p {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 220px;
   position: absolute;
   padding-left: 200px;
   padding-top: 10px;
@@ -53,7 +58,7 @@ p {
 }
 
 @media (max-width: 1300px) {
-    .logo {
+  .logo {
     padding-left: 100px;
   }
 }
@@ -70,7 +75,7 @@ p {
   /* background-color: rgba(128, 128, 128, 0.1); */
   z-index: -1;
   width: 100%;
-  height: 90px;
+  height: 97px;
   transition-duration: 0.4s;
 }
 
@@ -83,13 +88,13 @@ p {
   text-decoration: none;
   font-size: 16px;
   line-height: 25px;
-  border-radius: 4px;
+  border-radius: 6px;
   transition-duration: 0.4s;
 }
 
 /* Change the background color on mouse-over */
 .header a:hover {
-  color: #a8ffd8;
+  color: #d1d7e0;
 }
 
 /* Style the active/current link*/
@@ -108,130 +113,133 @@ p {
 }
 
 @media (max-width: 1300px) {
-    .header-links {
+  .header-links {
     padding-right: 100px;
   }
 }
 
 /* The hero image */
 .hero-image {
-    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(rgba(86,86,86, 0.5) 10%, rgba(0, 0, 0, 0.5) 40%), url("images/coding1.jpg");
-    /* background-image: linear-gradient(to right, rgba(43, 122, 120, 0.1), rgba(58, 175, 169, 0.5), rgba(43, 122, 120, 0.1)), url("images/coding1.jpg"); */
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(
+      rgba(86, 86, 86, 0.5) 10%,
+      rgba(0, 0, 0, 0.5) 40%
+    ),
+    url('images/header-1.jpg');
+  /* background-image: linear-gradient(to right, rgba(43, 122, 120, 0.1), rgba(58, 175, 169, 0.5), rgba(43, 122, 120, 0.1)), url("images/coding1.jpg"); */
 
-    /* Set a specific height */
-    height: 75%;
+  /* Set a specific height */
+  height: 75%;
 
-    /* Position and center the image to scale nicely on all screens */
-    background-position: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 /* Place text in the middle of the image */
 .hero-text {
-    color: #ffffff !important;
-    text-align: left;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  color: #ffffff !important;
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .hero-button {
-    background-color: transparent;
-    position: absolute;
-    top: 72%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: solid 3px;
-    border-color: #def2f1;
-    border-radius: 10px;
-    color: #def2f1;
-    padding: 10px 30px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    transition-duration: 0.2s;
+  font-family: 'Tajawal', sans-serif;
+  background-color: #802bb1;
+  top: 65%;
+  left: 34%;
+  border: none;
+  border-color: #def2f1;
+  border-radius: 100px;
+  color: #def2f1;
+  padding: 12px 35px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px 2px;
+  cursor: pointer;
+  transition-duration: 0.2s;
 }
 
 @media (max-width: 850px) {
   .hero-button {
-      margin-top: 30px;
+    margin-top: 30px;
   }
 }
 
 @media (max-width: 550px) {
   .hero-button {
-      margin-top: 45px;
-      padding: 8px 20px;
+    margin-top: 45px;
+    padding: 8px 20px;
   }
 }
 
 .hero-button:hover {
-    background-color: #17252a;
-    border-color: #d1ffea;
-    color: #b55bff;
-    padding: 12px 32px;
-    font-size: 16px;
-    cursor: pointer;
+  background-color: #17252a;
+  /* border-color: #d1ffea; */
+  /* color: #b55bff; */
+  padding: 12px 32px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 @media (max-width: 550px) {
   .hero-button:hover {
-      padding: 8px 20px;
+    padding: 8px 20px;
   }
 }
 
 .hellowold {
-    text-align: center;
-    background-color: #5bffb5;
-    /* background-image: linear-gradient(#3aafa9, #feffff); */
-    /* background-image: linear-gradient(to right, #0f2b7a78, #3aafa9, #0f2b7a78); */
+  text-align: center;
+  background-color: #2d283e;
+  /* background-image: linear-gradient(#3aafa9, #feffff); */
+  /* background-image: linear-gradient(to right, #0f2b7a78, #3aafa9, #0f2b7a78); */
 }
 
-.intro-text{
-    text-align: center;
-    padding: 5rem 20rem 5rem 20rem;
-    line-height: 1.8;
+.intro-text {
+  text-align: justify;
+  padding: 5rem 18rem 5rem 18rem;
+  line-height: 1.8;
 }
 
 @media (max-width: 1600px) {
-    .intro-text {
+  .intro-text {
     padding: 5rem 12rem 5rem 12rem;
     transition-duration: 0.2s;
   }
 }
 
 @media (max-width: 1300px) {
-    .intro-text {
+  .intro-text {
     padding: 5rem 10rem 5rem 10rem;
     transition-duration: 0.2s;
   }
 }
 
 @media (max-width: 1100px) {
-    .intro-text {
+  .intro-text {
     padding: 5rem 5rem 5rem 5rem;
     transition-duration: 0.2s;
   }
 }
 
 @media (max-width: 800px) {
-    .intro-text {
+  .intro-text {
     padding: 5rem 2rem 5rem 2rem;
     transition-duration: 0.2s;
   }
 }
 
 .my-work {
-    background-color: #fbfbfb;
-    text-align: center;
-    padding: 2rem 1rem 3rem 1rem;
-    vertical-align: middle;
+  background-color: #fbfbfb;
+  text-align: center;
+  padding: 2rem 1rem 3rem 1rem;
+  vertical-align: middle;
 }
 
 #title {
@@ -242,14 +250,14 @@ p {
   padding-bottom: 30px;
 }
 
- #skills-blurb {
+#skills-blurb {
   text-align: justify;
   text-align-last: center;
-  max-width: 1000px;
+  max-width: 1050px;
   margin: auto;
-  padding: 30px 30px 20px 30px;
+  padding: 30px 25px 20px 25px;
   transition-duration: 0.2s;
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
   line-height: 1.5;
 }
 
@@ -269,49 +277,50 @@ p {
   #skills-blurb {
     margin: 0 0 50px 0;
   }
-} 
-
-.my-work2 {
-    text-align: center;
-    /* background: #e4fff3; */
-    padding: 1rem 1rem 1rem 1rem;
-    /* background-image: linear-gradient(to right, #def2f1, #feffff, #def2f1); */
 }
 
-.work-text{
-    display: inline-block;
-    vertical-align: middle;
-    text-align: left;
-    color: #0a0908;
-    /* background-color: white; */
-    margin: auto, 50px, auto, 50px;
-    max-width: 500px;
-    padding: 1rem 4rem 1rem 8rem;
-    /* box-shadow: 10px 5px 5px grey; */
-    transition-duration: 0.2s;
+.my-work2 {
+  text-align: center;
+  /* background: #e4fff3; */
+  padding: 1rem 1rem 1rem 1rem;
+  /* background-image: linear-gradient(to right, #def2f1, #feffff, #def2f1); */
+}
+
+.work-text {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  color: #0a0908;
+  /* background-color: white; */
+  margin: auto, 50px, auto, 50px;
+  max-width: 500px;
+  padding: 0rem 4rem 1rem 8rem;
+  /* box-shadow: 10px 5px 5px grey; */
+  transition-duration: 0.2s;
 }
 
 @media (max-width: 1000px) {
-  .work-text{
-      padding: 1rem 3.5rem 1rem 3.5rem;
-      margin: auto, 10px, auto, 10px;
+  .work-text {
+    padding: 1rem 3.5rem 1rem 3.5rem;
+    margin: auto, 10px, auto, 10px;
   }
 }
 
 @media (max-width: 600px) {
-  .work-text{
-      padding: 0.5rem 0rem 1rem 0rem;
-      margin: auto, 10px, auto, 10px;
+  .work-text {
+    padding: 0.5rem 0rem 1rem 0rem;
+    margin: auto, 10px, auto, 10px;
   }
 }
 
 .musemac {
   position: relative;
+  padding-top: 15px;
   border-radius: 20px;
   width: 100%;
   height: auto;
   max-width: 340px;
-  max-height: 200px;
+  max-height: 220px;
   margin: auto;
 }
 
@@ -320,26 +329,28 @@ p {
   border-radius: 20px;
   width: 100%;
   max-width: 340px;
-  max-height: 200px;
+  max-height: 220px;
   height: auto;
   margin: auto;
 }
-
+/* 
 .musemac::after {
-  content:'List skills here';
+  content: 'Hello';
   border-radius: 20px;
   justify-content: center;
   align-items: center;
   display: flex;
-  color:#fff;
-  position:absolute;
-  width:100%; height:100%;
-  top:0; left:0;
-  background:rgba(0,0,0,1);
-  opacity:0;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 1);
+  opacity: 0;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
-}
+} */
 
 .musemac:hover:after {
   opacity: 0.7;
@@ -350,6 +361,7 @@ p {
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding-top: 50px;
+  padding-bottom: 20px;
 }
 
 #work-p {
@@ -360,7 +372,6 @@ p {
   width: 60px;
   height: 60px;
 }
-
 
 .flex-container {
   display: flex;
@@ -398,16 +409,20 @@ p {
 
 /*Services*/
 .serv-image {
-    color: white;
-    padding: 2rem 1rem 2rem 1rem;
-    text-align: center;
-    background-image: linear-gradient(rgba(61, 30, 86, 0.4) 100%, rgba(0, 0, 0, 0.5) 100%), url("images/nasa-min.jpg");
-/*    margin-top: 1rem;*/
-    /* Position and center the image to scale nicely on all screens */
-    background-position: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+  color: white;
+  padding: 2rem 1rem 2rem 1rem;
+  text-align: center;
+  background-image: linear-gradient(
+      rgba(46, 41, 62, 0.8) 100%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    url('images/bgbw.jpg');
+  /*    margin-top: 1rem;*/
+  /* Position and center the image to scale nicely on all screens */
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 .flex-grid-plat {
@@ -454,7 +469,7 @@ p {
 }
 
 #trio {
-/*  text-align: justify;
+  /*  text-align: justify;
   text-align-last: center;*/
   margin: auto;
   align-content: center;
@@ -462,71 +477,75 @@ p {
 }
 
 .how-work {
-    /* background-color: #f9f9f9; */
-    text-align: center;
-    margin: auto;
-    padding: 2rem 4rem 3rem 4rem;
-    vertical-align: middle;
-    max-width: 1300px;
+  /* background-color: #f9f9f9; */
+  text-align: center;
+  margin: auto;
+  padding: 2rem 4rem 3rem 4rem;
+  vertical-align: middle;
+  max-width: 1300px;
 }
 
 @media (max-width: 600px) {
   .how-work {
-      /* background-color: #f9f9f9; */
-      text-align: center;
-      padding: 2rem 1.5rem 3rem 1.5rem;
-      vertical-align: middle;
+    /* background-color: #f9f9f9; */
+    text-align: center;
+    padding: 2rem 1.5rem 3rem 1.5rem;
+    vertical-align: middle;
   }
 }
 
 /* Contact */
 .container {
-    font-family: "Karla", sans-serif;
-    text-align: left;
-    margin: 40px auto 30px auto;
-    width: 60%;
-    max-width: 700px;
-    border-radius: 5px;
-    background-color: #c6c6c6;
-    padding: 20px;
+  font-family: 'Tajawal', sans-serif;
+  text-align: left;
+  margin: 40px auto 30px auto;
+  width: 60%;
+  max-width: 700px;
+  border-radius: 5px;
+  background-color: #c6c6c6;
+  padding: 20px;
 }
 
 @media (max-width: 850px) {
   .container {
-      width: 80%;
+    width: 80%;
   }
 }
 
 @media (max-width: 350px) {
   .container {
-      padding: 10px;
+    padding: 10px;
   }
 }
 
-input[type=text], select, textarea {
-    font-family: "Karla", sans-serif;
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
+input[type='text'],
+select,
+textarea {
+  font-family: 'Tajawal', sans-serif;
+  font-size: 16px;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
-input[type=submit] {
-    font-family: "Karla", sans-serif;
-    background-color: #5bffb5;
-    color: #0a0908;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+input[type='submit'] {
+  font-family: 'Tajawal', sans-serif;
+  font-size: 16px;
+  background-color: #802bb1;
+  color: #ffffff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
 }
 
-input[type=submit]:hover {
-    background-color: #68f2b4;
+input[type='submit']:hover {
+  background-color: #2d283e;
 }
 
 #subject {
@@ -534,12 +553,11 @@ input[type=submit]:hover {
 }
 
 .contact-me {
-    /*background-color: #FCFCFC;*/
-    text-align: center;
-    padding: 2rem 1rem 3rem 1rem;
-    vertical-align: middle;
+  /*background-color: #FCFCFC;*/
+  text-align: center;
+  padding: 2rem 1rem 3rem 1rem;
+  vertical-align: middle;
 }
-
 
 /* Footer*/
 .footer {
@@ -548,8 +566,8 @@ input[type=submit]:hover {
   padding-bottom: 20px;
   font-size: 0.8rem;
   width: 100%;
-  background-color: #565656;
-  color: #5bffb5;
+  background-color: #2d283e;
+  color: #d1d7e0;
   text-align: center;
 }
 
